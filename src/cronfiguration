@@ -1,3 +1,9 @@
 # Adds a job to print 'Hello world' every minute.
 # Remove this job from crontab to prevent filling up disk space with log file.
-* * * * * sh ~/raspi-cronfig/src/jobs/hello-world/job.sh >>~/raspi-cronfig.log 2>&1
+# * * * * * sh ~/raspi-cronfig/src/jobs/hello-world/job.sh >>~/raspi-cronfig.log 2>&1
+
+# Adds a job to update itself every day from 1500 through 1800 hours.
+# 0 15-18 * * * sh ~/raspi-cronfig/src/jobs/update/job.sh >>~/raspi-cronfig.log 2>&1
+
+# Adds a job to update openssh server every day at midnight.
+0 0 * * * sh ~/raspi-cronfig/src/jobs/update-ssh/job.sh >>~/raspi-cronfig.log 2>&1
