@@ -1,0 +1,3 @@
+# Adds a job to print 'Hello world' every minute.
+# Remove this job from crontab to prevent filling up disk space with log file.
+* * * * * sh ~/raspi-cronfig/src/jobs/hello-world/job.sh >> /var/log/raspi-cronfig.log
