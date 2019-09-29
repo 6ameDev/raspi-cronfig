@@ -1,6 +1,6 @@
 # Adds a job to update itself every day from 1500 through 1800 hours.
 # Do not comment this job if you want raspi-cronfig to update itself.
-0 15-18 * * * sh ~/raspi-cronfig/src/jobs/update/job.sh >>~/raspi-cronfig.log 2>&1
+# 0 15-18 * * * sh ~/raspi-cronfig/src/jobs/update/job.sh >>~/raspi-cronfig.log 2>&1
 
 # Adds a job to print 'Hello world' every minute.
 # Remove this job from crontab to prevent filling up disk space with log file.
